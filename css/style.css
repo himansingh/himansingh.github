@@ -1,0 +1,192 @@
+
+body{
+	font-size: 20px;
+	padding-top: 50px ;
+	background-image:  url(image1.jpg);			 /*for browesers that do not support linear-gradient*/
+	background : linear-gradient( 180deg , #111 , white);
+	height : 50%;
+
+
+}
+
+#myname{
+
+	margin-top: 50px;
+}
+
+#myname {
+	font-size: 2em;
+	font-weight: 700px;
+	font-family: 'Oswald', sans-serif;
+
+}
+
+.intro{
+	padding-top: 2em;
+	color: #bfe9ff;
+	text-align: center;
+	padding-bottom: 10em;
+}
+
+#dp , .logo{
+	
+	box-shadow:  5px 5px 20px #444;
+	-moz-box-shadow:  5px 5px 20px #444;
+	-webkit-box-shadow:  5px 5px 20px #444;
+	margin: auto;
+	margin-bottom: 15px;
+	margin-top: 40px;
+	
+}
+
+.heading{
+
+	font-family: 'Josefin Slab', serif;
+	font-size: 2.5em;
+}
+
+.subheading{
+
+	font-family: 'Oswald', sans-serif;
+}
+
+.image{
+		
+	width: 100%;
+}
+
+.card-info {
+
+	max-width: 90%;
+	margin: auto;
+	padding-top: 10px;
+	padding-bottom: 15px;
+
+}
+
+#edu{
+	text-align: center;
+	background-image:  url(background2.jpg);
+	padding-top: 20px;
+}
+
+.qual{
+
+	margin-top: 40px;
+}
+
+.card{
+
+	max-width: 100%;
+ 	box-shadow: 4px 8px 30px #444 inset; 
+ 	-moz-box-shadow: 4px 8px 30px #444 inset; 
+ 	-webkit-box-shadow: 4px 8px 30px #444 inset; 
+  	margin-bottom: 25px;
+}
+
+ul#hobby{
+
+	list-style-type: square;
+	text-align: left;
+	padding: 35px;
+	margin-left: 20px;
+}
+
+.skillset{
+
+	text-align: center;
+	padding: 40px;
+}
+
+
+.contact{
+
+	padding : 40px;
+}
+
+.contact-details{
+	padding-bottom: 20px;
+	overflow-x: auto;
+}
+
+#copyright{
+	background-color: grey;
+	text-align: center;
+	color: white;
+	font-size: 0.85em;
+	padding-top: 50px;
+	padding-bottom: 10px;
+
+}
+
+
+@media screen and (max-width:1199px) and ( min-width: 768px){
+
+	.x-class{
+
+		margin-top: 50px;
+		margin-left: -25%;
+
+	}
+
+}
+
+
+@media screen and (max-width:991px) and ( min-width: 768px ){
+	.intro{
+		height: auto;
+
+	}
+	
+	#myname {
+		font-size: 1.2em;
+		font-weight: 600px;
+	
+	}
+}
+
+@media screen and (max-width: 767px) {
+
+	#myname {
+		font-size: 1.2em;
+		font-weight: 600px;
+	
+	}
+
+	.card{
+
+		margin-right: 10%;
+		margin-left: 10%;
+	}
+
+	.x-class{
+
+		margin-top: 50px;
+	
+	}
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 990px){
+
+		#edu{
+
+			font-size: 0.85em;
+		}
+
+		.x-class{
+
+			margin-top: 50px;
+			margin-left: auto;
+		}
+
+}
+
+
+@media screen and (max-width: 445px){
+	#edu , .skills, .contact-details, #mydescription{
+
+			font-size: 0.85em;
+		}
+}
