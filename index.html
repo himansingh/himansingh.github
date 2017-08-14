@@ -16,6 +16,9 @@
   <!-- Bootstrap js cdn -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
 
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <!-- Google font-->
   <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
@@ -27,7 +30,7 @@
 </head>
     
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar  navbar-fixed-top">
       <div class="container-fluid ">
 
       <!--To write Portfolio on left top-->
@@ -80,7 +83,7 @@
         <div class="row">
 
           <div class="heading">About Me</div>
-
+          <hr>
           
           <div class=" subheading" ><h2>Educational Qualification</h2></div>
         
@@ -137,27 +140,39 @@
     <div class="container skills bg-success">
 
         <div class=" row heading skillset">My Skills</div> 
-      
-      <div class="col-md-3 col-xs-6">
+      	<hr>
+      <div class="col-md-3 col-xs-6 col-sm-4">
           <img src="images/htmlimage.png" alt = "html 5 logo" class=" img-responsive logo" title="HTML">
           <div class="skillset">
             <p> Beginner level </p>
           </div>
       </div>
-      <div class="col-md-3 col-xs-6">
+      <div class="col-md-3 col-xs-6 col-sm-4">
         <img src="images/cssimage.jpg" alt = "Css 3 logo" class=" img-responsive logo" title="Css">
         <div class="skillset">
             <p> Beginner level </p>
           </div>
       </div>
-      <div class="col-md-3 col-xs-6">
+      <div class="col-md-3 col-xs-6 col-sm-4">
         <img src="images/javascriptimage.jpg" alt = "JavaScript logo" class=" img-responsive logo" title="JavaScript">
         <div class="skillset">
             <p> Beginner level </p>
           </div>
        </div>
-      <div class="col-md-3 col-xs-6">
+      <div class="col-md-3 col-xs-6 col-sm-4">
         <img src="images/bootstrapimage.png" alt = "Bootstrap logo" class=" img-responsive logo" title="Bootstrap">
+        <div class="skillset">
+            <p> Beginner level </p>
+        </div>
+      </div>
+      <div class="col-md-3 col-xs-6 col-sm-4 col-md-offset-3">
+        <img src="images/jquery.jpg" alt = "jQuery logo" class=" img-responsive logo" title="jQuery">
+        <div class="skillset">
+            <p> Beginner level </p>
+        </div>
+      </div>
+      <div class="col-md-3 col-xs-6 col-sm-4 ">
+        <img src="images/angular.png" alt = "Angular logo" class=" img-responsive logo" title="Angularjs">
         <div class="skillset">
             <p> Beginner level </p>
         </div>
@@ -179,7 +194,9 @@
             <p style="padding-left: 2px;"> 
                 <a href="https://www.facebook.com/himanshu.singh.925"> <i class="fa fa-facebook-square " aria-hidden="true" title="Facebook"> </i> </a> 
                 <a href="https://www.instagram.com/himanshu.singh.925"> <i class="fa fa-instagram " aria-hidden="true" title="Instagram"> </i> </a> 
-                <a href="https://www.linkedin.com/in/himanshu-singh-ab6054119/"> <i class="fa fa-linkedin-square " aria-hidden="true" title="LinkedIn"> </i> </a> 
+                <a href="https://www.linkedin.com/in/himanshu-singh-ab6054119/"> <i class="fa fa-linkedin-square " aria-hidden="true" title="LinkedIn"> </i> </a>
+                <a href="https://www.github.com/himansingh"> <i class="fa fa-github" aria-hidden="true" title="Github"></i> </a>
+
             </p>
           </div>
         </div>  
@@ -187,8 +204,39 @@
     </div>  
 
     <footer class="container-fluid " id="copyright">
-      <div > © 2017. Himanshu. All Rights Reserved. </div>        
+      <div > &copy; 2017. Himanshu. All Rights Reserved. </div>        
     </footer>
+
+    <script type="text/javascript">
+
+
+    // To change color of navbar on scrolling  
+    	$(document).ready(function(){
+
+          var navOffset = $(".heading").offset().top - 40;
+          console.log(navOffset) ;
+
+        $(window).on("scroll" , function(){
+
+           var scrollPos = $(window).scrollTop();
+           //console.log(scrollPos + " scrollpos");
+          if( scrollPos > navOffset){
+
+            $("nav").css({"background-color" : "black" , "border" : "none" , "opacity" :"0.7" }) ;
+           }
+
+           else {
+
+              $("nav").css({"background-color" : "transparent" , "border" : "none" }) ;
+           }
+           
+        });
+
+
+      });
+      
+
+    </script>
 
 </body>
 </html>
