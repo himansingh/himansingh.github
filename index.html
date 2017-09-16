@@ -20,6 +20,7 @@
 
 
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
   <!-- Google font-->
   <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:600i" rel="stylesheet">
@@ -30,11 +31,11 @@
 </head>
     
 <body>
-    <nav class="navbar  navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-fixed-top navbar-inverse">
       <div class="container-fluid ">
 
       <!--To write Portfolio on left top-->
-        <div class="navbar-header">
+        <div class="navbar-header" style="color:black">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -62,15 +63,16 @@
     <a name="home"></a>
     <header class="container-fluid">
       <div class="row intro">
-        <div class="col-lg-6 col-md-4 col-xs-12">
+        <div class="col-lg-6 col-md-4 col-xs-12 animated bounceInLeft">
           <img src="css/dp.jpg" alt="My DP" title="Himanshu Singh" id="dp" class="img-responsive img-rounded">
         </div>
         <div class="col-lg-6 col-md-8 col-xs-12">
-          <p id="myname"> Hi, I'm HIMANSHU SINGH.</p> 
-          <div id="mydescription"> 
-            <p>A beginner in the world of Frontend Web Developers.</p>
-            <p>I spend all day honing skills on developer tools.<br> Go ahead to explore more !!</p>
+          <p id="myname" class="animated zoomIn"> Hi, I'm HIMANSHU SINGH.</p> 
+          <div id="mydescription" class="animated fadeInUp">
+          	<small> An enthusiastic Frontend Developer with zeal to learn.</small> 
           </div>
+          <br>
+          <a href="https://himansingh.github.io/myportfolio" class="btn" id="topButton">Check my other website</a>
         </div>
         <div> </div>
       </div>
@@ -91,7 +93,7 @@
 
           <div class="col-sm-1"></div>
           <div class="col-xs-12 col-sm-4 qual ">
-            <div class="card">
+            <div class="card animated bounceInUp">
               <img src="images/college.jpg" alt="college-image" class="image" title="UG" >
               <div class="card-info">
                 <p >Graduate in Mechanical Engineering from Saveetha Engineering College, Chennai. <br> CGPA - 8.1</p>
@@ -100,7 +102,7 @@
           </div>
         <div class="col-sm-2"></div>
         <div class="col-xs-12 col-sm-4 qual "  >
-          <div class="card">  
+          <div class="card animated bounceInUp">  
             <img src="images/school4.jpg" alt="school-image" class="image" title="class XII">
             <div class="card-info">
               <p> <b> HSC</b> <br> School : Kendriya Vidyalaya <br> Board : CBSE <br> Perecntage : 92% </p>
@@ -110,7 +112,7 @@
         <div class="col-sm-1"></div>
         <div class="col-sm-4 col-xs-12"></div>
         <div class="col-sm-4 col-xs-12">
-          <div class="card x-class">  
+          <div class="card x-class animated bounceInUp">  
             <img src="images/school-image.jpg" alt="school-image" class="image" title="class X">
             <div class="card-info">
               <p> <b>SSC</b> <br> School : Kendriya Vidyalaya <br> Board : CBSE <br> Perecntage : 91.2% </p>
@@ -187,15 +189,17 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 col-xs-12 heading contact"> <p> Contact Me </p> </div>
-          <div class="col-md-4 col-sm-6 col-xs-12 contact-details"> <p> <b>Mail at </b> <br><br> himansingh2016@gmail.com </p> </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 contact-details"> 
+          	<p> <b>Mail at </b> <br><br><a href="mailto:himansingh2016@gmail.com"> himansingh2016@gmail.com </a>  </p> 
+          </div>
           <div class="col-md-4 col-sm-6 col-xs-12 contact-details"> <p><b> Phone </b> <br><br> +917904986253 </p> </div>
           <div class="col-md-4 col-xs-12 contact-details"> 
             <p > <b> Social links </b> <br><br> </p>
             <p style="padding-left: 2px;"> 
-                <a href="https://www.facebook.com/himanshu.singh.925"> <i class="fa fa-facebook-square " aria-hidden="true" title="Facebook"> </i> </a> 
-                <a href="https://www.instagram.com/himanshu.singh.925"> <i class="fa fa-instagram " aria-hidden="true" title="Instagram"> </i> </a> 
-                <a href="https://www.linkedin.com/in/himanshu-singh-ab6054119/"> <i class="fa fa-linkedin-square " aria-hidden="true" title="LinkedIn"> </i> </a>
-                <a href="https://www.github.com/himansingh"> <i class="fa fa-github" aria-hidden="true" title="Github"></i> </a>
+                <a href="https://www.facebook.com/himanshu.singh.925"> <i class="fa fa-facebook-square fa-2x" aria-hidden="true" title="Facebook"> </i> </a> 
+                <a href="https://www.instagram.com/himanshu.singh.925"> <i class="fa fa-instagram fa-2x" aria-hidden="true" title="Instagram"> </i> </a> 
+                <a href="https://www.linkedin.com/in/himanshu-singh-ab6054119/"> <i class="fa fa-linkedin-square fa-2x" aria-hidden="true" title="LinkedIn"> </i> </a>
+                <a href="https://www.github.com/himansingh"> <i class="fa fa-github fa-2x" aria-hidden="true" title="Github"></i> </a>
 
             </p>
           </div>
@@ -213,24 +217,25 @@
     // To change color of navbar on scrolling  
     	$(document).ready(function(){
 
-          var navOffset = $(".heading").offset().top - 40;
-          console.log(navOffset) ;
+        var navOffset = $(".heading").offset().top - 40;
+
+        console.log(navOffset) ;
 
         $(window).on("scroll" , function(){
 
-           var scrollPos = $(window).scrollTop();
+          var scrollPos = $(window).scrollTop();
            //console.log(scrollPos + " scrollpos");
           if( scrollPos > navOffset){
 
             $("nav").css({"background-color" : "black" , "border" : "none" , "opacity" :"0.7" }) ;
-           }
+          }
 
            else {
 
               $("nav").css({"background-color" : "transparent" , "border" : "none" }) ;
            }
            
-        });
+        }); 
 
 
       });
