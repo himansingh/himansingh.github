@@ -1,247 +1,161 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	
-  <title>Himanshu's Portfolio</title>
-	<meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
-  
-  <!-- Bootstrap js cdn -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
-
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/animate.css">
-  <!-- Google font-->
-  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:600i" rel="stylesheet">
-
-  <!--font awesome cdn-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rancho" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
 </head>
-    
+
 <body>
-    <nav class="navbar navbar-fixed-top navbar-inverse">
-      <div class="container-fluid ">
-
-      <!--To write Portfolio on left top-->
-        <div class="navbar-header" style="color:black">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a href="#" class="navbar-brand"><em>MyPortfolio</em></a>
-        </div> 
-
-      <!-- menu items-->
-        <div class="collapse navbar-collapse" >
-            <ul class="nav navbar-nav">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#skills">Skills</a></li>
-            <!--  <li><a href="#project">Project</a></li> --> 
-            </ul> 
-            <ul class="nav navbar-nav navbar-right "> 
-              <li> <a href="#contact">Contact</a> </li>
-            </ul>
-        </div> 
-      </div>
+    <nav>
+        <a href="#"> Himanshu Singh </a>
     </nav>
-
-   <!--Home-->
-    <a name="home"></a>
-    <header class="container-fluid">
-      <div class="row intro">
-        <div class="col-lg-6 col-md-4 col-xs-12 animated bounceInLeft">
-          <img src="css/dp.jpg" alt="My DP" title="Himanshu Singh" id="dp" class="img-responsive img-rounded">
+    <header>
+        <div>
+            <div id="name">Hey there, I'm Himanshu.</div>
+            <div> I am a software developer with specific interest in JS and Python development. </div>
         </div>
-        <div class="col-lg-6 col-md-8 col-xs-12">
-          <p id="myname" class="animated zoomIn"> Hi, I'm HIMANSHU SINGH.</p> 
-          <div id="mydescription" class="animated fadeInUp">
-          	<small> An enthusiastic Frontend Developer with zeal to learn.</small> 
-          </div>
-          <br>
-          <a href="https://himansingh.github.io/myportfolio" class="btn" id="topButton">Check my other website</a>
+        <div >
+            <a href='https://github.com/himansingh' id='github'> Check my work on GITHUB </a>
         </div>
-        <div> </div>
-      </div>
     </header>
 
-    <!--About Me-->
-    <a name="about"></a>
-    <div class="container-fluid ">
-      <div id= "edu" class="container ">
-        <div class="row">
-
-          <div class="heading">About Me</div>
-          <hr>
-          
-          <div class=" subheading" ><h2>Educational Qualification</h2></div>
-        
-        <!-- Dividing container in column grid of 1-4-2-4-1  -->
-
-          <div class="col-sm-1"></div>
-          <div class="col-xs-12 col-sm-4 qual ">
-            <div class="card animated bounceInUp">
-              <img src="images/college.jpg" alt="college-image" class="image" title="UG" >
-              <div class="card-info">
-                <p >Graduate in Mechanical Engineering from Saveetha Engineering College, Chennai. <br> CGPA - 8.1</p>
-              </div>
+    <section id='about-section'>
+        <div class='head'>
+            <div>About Me</div>
+            <hr class="title-seperator1"> 
+        </div>
+        <div>
+            <div id="content">
+                <p>I am a software developer with an industrial experience of 6+ months. I started my programming career from front-end development and went ahead with node.js based backend development. My work experience also includes Python and Lua based development. Currently, I'm working on python based computer-vision and image-processing to make an OCR engine.</p>
+                <br>
+                I also have keen interest in Indian armed forces. My interest secured me AIR-7 in Indian Army SSB interview but couldn't join due to medical reasons. I love running and ocassionally take part in some marathons.
             </div>
-          </div>
-        <div class="col-sm-2"></div>
-        <div class="col-xs-12 col-sm-4 qual "  >
-          <div class="card animated bounceInUp">  
-            <img src="images/school4.jpg" alt="school-image" class="image" title="class XII">
-            <div class="card-info">
-              <p> <b> HSC</b> <br> School : Kendriya Vidyalaya <br> Board : CBSE <br> Perecntage : 92% </p>
-            </div> 
-          </div>  
+            <div id='dp'>
+                <img src="./images/dp.jpg" alt="Himanshu Singh">
+            </div>
         </div>
-        <div class="col-sm-1"></div>
-        <div class="col-sm-4 col-xs-12"></div>
-        <div class="col-sm-4 col-xs-12">
-          <div class="card x-class animated bounceInUp">  
-            <img src="images/school-image.jpg" alt="school-image" class="image" title="class X">
-            <div class="card-info">
-              <p> <b>SSC</b> <br> School : Kendriya Vidyalaya <br> Board : CBSE <br> Perecntage : 91.2% </p>
-            </div> 
-          </div>  
+    </section>
+
+    <section id="skills">
+        <div class='head'>
+            <div>My Skills</div>
+            <hr class="title-seperator2"> 
         </div>
-        <div class="col-sm-4 col-xs-12"></div>
-      </div>  
-
-        <!-- hobbies interests and achievements-->
-       
-        <div class="row">
-          <div class="subheading" ><h2> Interests and Achievements </h2></div>
-          <ul id="hobby">
-            <li> A die-hard fan of Indian Armed Forces and always keep close eye on the technology and tactics used by them.</li>
-            <li> Secured AIR 7 in Indian Army officer's selection.</li>
-            <li> Jogging, editorial-reading and playing are few other things that I love.</li>
-          </ul>  
+        <div id="skills-flexbox">
+            <div class="skills-flex-item grow">
+                <em><strong>Languages I speak </strong> </em>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Node.js</li>
+                    <li>Python</li>
+                    <li>Lua</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+            <div class="skills-flex-item">
+                <em><strong>Tools I use </strong> </em>
+                <ul>
+                    <li>NPM</li>
+                    <li>Yarn</li>
+                    <li>Pip</li>
+                    <li>Gulp</li>
+                </ul>
+            </div>
+            <div class="skills-flex-item grow">
+                <em><strong>Libraries / Frameworks </strong> </em>
+                <ul>
+                    <li>Angularjs</li>
+                    <li>Express.js</li>
+                    <li>Flask</li>
+                    <li>jQuery</li>
+                    <li>OpenCV</li>
+                </ul>
+            </div>
+            <div class="skills-flex-item">
+                <em><strong>Others </strong> </em>
+                <ul>
+                    <li>Docker</li>
+                    <li>Nginx</li>
+                </ul>
+            </div>
         </div>
+    </section>
 
-      </div>
-       
-    </div>
 
-      <!-- My Skills-->
-    <a name="skills"></a>
-    <div class="container skills bg-success">
-
-        <div class=" row heading skillset">My Skills</div> 
-      	<hr>
-      <div class="col-md-3 col-xs-6 col-sm-4">
-          <img src="images/htmlimage.png" alt = "html 5 logo" class=" img-responsive logo" title="HTML">
-          <div class="skillset">
-            <p> Beginner level </p>
-          </div>
-      </div>
-      <div class="col-md-3 col-xs-6 col-sm-4">
-        <img src="images/cssimage.jpg" alt = "Css 3 logo" class=" img-responsive logo" title="Css">
-        <div class="skillset">
-            <p> Beginner level </p>
-          </div>
-      </div>
-      <div class="col-md-3 col-xs-6 col-sm-4">
-        <img src="images/javascriptimage.jpg" alt = "JavaScript logo" class=" img-responsive logo" title="JavaScript">
-        <div class="skillset">
-            <p> Beginner level </p>
-          </div>
-       </div>
-      <div class="col-md-3 col-xs-6 col-sm-4">
-        <img src="images/bootstrapimage.png" alt = "Bootstrap logo" class=" img-responsive logo" title="Bootstrap">
-        <div class="skillset">
-            <p> Beginner level </p>
+    <section id="projects">
+        <div class='head'>
+            <div> Projects </div>
+            <hr class="title-seperator3"> 
         </div>
-      </div>
-      <div class="col-md-3 col-xs-6 col-sm-4 col-md-offset-3">
-        <img src="images/jquery.jpg" alt = "jQuery logo" class=" img-responsive logo" title="jQuery">
-        <div class="skillset">
-            <p> Beginner level </p>
+        <div id='project-flexbox'>
+            <div class="card">
+                <div>
+                    <img src="./images/survey.png" style="width: 100%;">
+                </div>
+                <div >
+                    <div class="card-head"> Online Survey App </div>
+                    <div class='card-body'>
+                        This is a user-friendly SPA developed using Angularjs. It has two sections - Admin section and Polling section. Admin can create, edit and delete any survey or just it's questions or options. Polling section is for users to poll their opinion.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <img src="./images/mykart.jpg" style="width: 100%;">
+                </div>
+                <div >
+                    <div class="card-head"> E-commerce website </div>
+                    <div class='card-body'>
+                        This is a user-friendly SPA developed using Angularjs. It has two sections - Admin section and Polling section. Admin can create, edit and delete any survey or just it's questions or options. Polling section is for users to poll their opinion.
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-md-3 col-xs-6 col-sm-4 ">
-        <img src="images/angular.png" alt = "Angular logo" class=" img-responsive logo" title="Angularjs">
-        <div class="skillset">
-            <p> Beginner level </p>
+    </section>
+
+    <section id='contact'>
+        <div class="head">
+            <div>Like my work !! <br> Get in touch. I'd happy to revert &#9786;</div>
         </div>
-      </div>
-      
-        
-    </div>
-      
-      <!-- Contact details -->
-    <a name="contact"></a>
-    <div class="container-fluid bg-info">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-xs-12 heading contact"> <p> Contact Me </p> </div>
-          <div class="col-md-4 col-sm-6 col-xs-12 contact-details"> 
-          	<p> <b>Mail at </b> <br><br><a href="mailto:himansingh2016@gmail.com"> himansingh2016@gmail.com </a>  </p> 
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12 contact-details"> <p><b> Phone </b> <br><br> +917904986253 </p> </div>
-          <div class="col-md-4 col-xs-12 contact-details"> 
-            <p > <b> Social links </b> <br><br> </p>
-            <p style="padding-left: 2px;"> 
-                <a href="https://www.facebook.com/himanshu.singh.925"> <i class="fa fa-facebook-square fa-2x" aria-hidden="true" title="Facebook"> </i> </a> 
-                <a href="https://www.instagram.com/himanshu.singh.925"> <i class="fa fa-instagram fa-2x" aria-hidden="true" title="Instagram"> </i> </a> 
-                <a href="https://www.linkedin.com/in/himanshu-singh-ab6054119/"> <i class="fa fa-linkedin-square fa-2x" aria-hidden="true" title="LinkedIn"> </i> </a>
-                <a href="https://www.github.com/himansingh"> <i class="fa fa-github fa-2x" aria-hidden="true" title="Github"></i> </a>
+        <div id=contact-flexbox>
+            <div class="contact-flex-item">
+                <i class="fas fa-mobile-alt fa-2x"></i><br><br>
+                +917904986253               
+            </div>
+            <div class="contact-flex-item">
+                <a href="mailto:himansingh2016@gmail.com">
+                   <i class="fas fa-at fa-2x"></i> 
+                </a>
+                <br><br>
+                himansingh2016@gmail.com
+            </div>
+            <div class="contact-flex-item">
+                <i class="far fa-handshake fa-2x"></i><br><br>
+                <a href="https://www.linkedin.com/in/himanshu-singh-ab6054119/" title="LinkedIn"> 
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/himansingh" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </section>
 
-            </p>
-          </div>
-        </div>  
-      </div>
-    </div>  
-
-    <footer class="container-fluid " id="copyright">
-      <div > &copy; 2017. Himanshu. All Rights Reserved. </div>        
+    <footer>
+        <div>
+            Website designed by Himanshu.
+        </div>
     </footer>
 
-    <script type="text/javascript">
-
-
-    // To change color of navbar on scrolling  
-    	$(document).ready(function(){
-
-        var navOffset = $(".heading").offset().top - 40;
-
-        console.log(navOffset) ;
-
-        $(window).on("scroll" , function(){
-
-          var scrollPos = $(window).scrollTop();
-           //console.log(scrollPos + " scrollpos");
-          if( scrollPos > navOffset){
-
-            $("nav").css({"background-color" : "black" , "border" : "none" , "opacity" :"0.7" }) ;
-          }
-
-           else {
-
-              $("nav").css({"background-color" : "transparent" , "border" : "none" }) ;
-           }
-           
-        }); 
-
-
-      });
-      
-
-    </script>
-
 </body>
+
 </html>

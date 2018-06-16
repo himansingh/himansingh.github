@@ -1,0 +1,310 @@
+/*
+    animation-name
+    animation-duration
+    animation-delay
+    animation-iteration-count
+    animation-direction
+    animation-timing-function (linear . ease . ease-in . ease-out . ease-in-out)
+*/
+
+/* @keyframes test {
+    0% {
+        background-color: tomato;
+    }
+    50% {
+        background-color: goldenrod;
+    }
+    100% {
+        background-color: tomato;
+    }
+} */
+
+/* header {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+} */
+
+/*a {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: tomato;
+} 
+
+ a:hover {
+    animation: test 1.5s ease;
+    animation-iteration-count: infinite;
+} */
+
+:root {
+    font-size: 10px;
+}
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav,
+header, footer {
+    padding-bottom: 25px;
+    margin: 0px;
+    background-color: #280515;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav>a:hover {
+    color: blue;
+}
+
+nav>a {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    padding: 5px;
+    color: red;
+}
+
+header>div:nth-child(2) {
+    margin-top: 25px;
+}
+
+#github {
+    position: relative;
+    padding: 15px;
+    background-color: #8500F0;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 1.8rem;
+}
+
+header {
+    position: relative;
+    /*min-height: 35vh;*/
+    cursor: pointer;
+    padding-top: 150px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+header>div {
+    position: relative;
+    top: 50%;
+    width: initial;
+    height: auto;
+    text-align: center;
+    transform: translateY(-50%);
+    color: #5CA049;
+}
+
+#name~div {
+    font-size: 2rem;
+}
+
+#name {
+    font-size: 3rem;
+}
+
+#about-section {
+    background-color: #FEF4BE;
+    color: #5CA049;
+}
+
+img[alt="Himanshu Singh"] {
+    border-radius: 50%;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100%;
+}
+
+#about-section > .head, #skills > .head, #projects > .head{
+    font-size: 3.5rem;
+    /*width: 100vw;*/
+    padding-top: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+hr{
+    width: 150px;
+    margin-top: 5px;
+    display: inline-block;
+    border-style: none;
+    text-align: center;
+}
+.title-seperator1{
+    border-top: 5px double #5CA049;    
+}
+.title-seperator2{
+    border-top: 5px double #2B66AB;    
+}
+.title-seperator3{
+    border-top: 5px double #79756F;    
+}
+
+#about-section>div:nth-child(2), #skills-flexbox, #contact-flexbox, #project-flexbox {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    font-size: 2rem;    
+    /*width: 100vw;*/
+}
+
+#content{
+    order:0;
+    flex-basis: 40%;
+    padding-left: 25px;
+    line-height: 1.5;
+}
+#dp{
+    order: 2;
+    flex-basis: 40%;
+}
+
+#skills{
+    background-color: #42C0FF;
+    color: #2B66AB;
+}
+ul{
+    padding-left: 0px;
+    list-style-type: none;
+}
+
+#contact{
+    background-color: #FCDB25;
+}
+
+#contact > .head {
+    text-align: center;
+    padding: 40px 0;
+    font-family: 'Rancho', cursive;
+    font-size: 3rem;
+}
+#contact a{
+    color: #000000;
+}
+#contact a:hover{
+    color: blue;
+}
+#contact-flexbox div{
+    text-align: center;
+}
+.contact-flex-item, .skills-flex-item{
+    flex-flow: row wrap;
+    line-height: 1.5;
+}
+.contact-flex-item{
+    flex-basis: 30%;
+}
+.skills-flex-item{
+    flex-basis: 23%;
+}
+#skills-flexbox{
+    padding-left: 25px;
+}
+
+#about-section, #skills, #contact, #projects{
+    padding-bottom: 10px;
+}
+.lib{
+    flex-grow: 2;
+}
+#projects{
+    /*background-color: #2FC0D5;*/
+    background-color: #F5F5F5;
+    color: #000000;
+    padding-bottom: 25px;
+}
+.card{
+    flex-basis: 35%;
+    text-align: center;
+    box-shadow: 5px 5px 5px 2px grey ;
+    border: 2px solid grey;
+}
+
+.card > div{
+    background-color: #FA7301;
+}
+
+.card-head{
+    padding: 10px;
+    font-size: 2.5rem;
+    font-family: 'Roboto'; 
+    font-weight: 700;
+/*    text-decoration: underline;
+*/}
+.card-body{
+    padding: 10px 20px;
+    text-align: left;
+    font-size: 1.8rem;
+}
+footer{
+    text-align: center;
+    color: #FFFFFF;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width : 850px){
+    .card{
+        flex-basis: 50%;
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width : 680px){
+    .card{
+        flex-basis: 75%;
+    }
+}
+
+@media screen and (max-width: 804px){
+    #content{
+        order: 2;
+        flex-basis: 80%;
+    }
+    #dp{
+        order: 1;
+        flex-basis: 80%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    :root{
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 532px){
+    :root{
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .skills-flex-item{
+        flex-basis: 40%;
+    }
+}
+
+@media screen and (max-width: 340px){
+    .contact-flex-item{
+        flex-basis: 80%;
+    }
+    .card{
+        flex-basis: 90%;   
+    }
+}
+
+@media screen and (max-width: 473px){
+    .contact-flex-item{
+        padding-top: 25px;
+    }
+}
